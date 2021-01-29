@@ -1,0 +1,1 @@
+jquery.min.js and main.js are index system files 
