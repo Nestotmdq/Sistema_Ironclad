@@ -18,6 +18,7 @@ function buscar_datos(consulta){
 
 $(document).on('keyup','#caja_busqueda', function(){
 	var valor = $(this).val();
+	console.log(valor);
 	if (valor != "") {
 		buscar_datos(valor);
 	}else{

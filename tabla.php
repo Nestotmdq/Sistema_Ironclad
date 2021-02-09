@@ -9,6 +9,10 @@ $num4 = mysqli_num_rows($hacer);
 
 if (($num4>0)&&($num4<50)) {
 
+$salida.="<table border ='1'>";
+$salida.="<tr><td><center><a href ='importoexcell.php?' class= 'btn btn-success btn-sm'>exportar listado a excell</a></center></td></tr>";
+$salida.="<tr><td>";
+//comienza tabla visible  
 	$salida.="<table border=1 class='tabla_datos'>
 <thead>
 <tr id='titulo'>
@@ -99,36 +103,21 @@ $btnname .=$btnmodal;
        <tr>
        </tr>
        </table>
-       <br>
-
-       <a href='";
-       $cadena =  'https://www.google.com/maps/search/';
-       $cadena .= $fila['dir_calle'];
-       $cadena .= ' ';
-       $cadena .= $fila['dir_numero'];
-       $cadena .= '+';
-       $cadena .= $fila['localidad'];
-       $cadena .= '/@-38.0032629,-57.5810273,17z/data=!3m1!4b1';
-
-
-       $salida .= $cadena;
-
-      // $salida .= $cadena;
-       $salida .="' target=blanc>Localizar en Google Maps</a>
-
        </center>
-    
         `,
     });
-    
 		});
 	});
-
 </script>
 ";
 $btnname = 'b';
 }
 $salida.="</tbody></table>";
+
+//fin tabla visible
+$salida.="</td></tr>";
+$salida.="</table>";
+
 }
 if($num4>50){
 $salida.="LA BUSQUEDA DEVUELVE MAS DE 50 RESULTADOS, INGRESE MAS PISTAS POR FAVOR";
@@ -137,6 +126,8 @@ if($num4==0)
 {
 $salida.="NO HAY DATOS :(";
 }
+
+
 
 echo $salida;
 $close = mysqli_close($link);

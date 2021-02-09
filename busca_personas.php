@@ -46,9 +46,5 @@ $_SESSION['s_calle']='';
 		
 </section>
 
-
-
-
-
 </body>
 </html>
