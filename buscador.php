@@ -1,16 +1,20 @@
-<script src="sweetalert2@10.js"></script>
+<script src="js/sweetalert2@10.js"></script>
 <?php
-
 include 'conexion2.php';
-$query = "SELECT  nombre,c_postal,localidad,pcia,dir_calle,dir_numero,dir_piso_depto
- FROM `contactos` where nombre like '%$nombre%' and dir_calle like '%$calle%'";
+
+$nombre = $_POST['var1'];
+$calle = $_POST['var2'];
+$salida ='';
+
+$query = "select  nombre,c_postal,localidad,pcia,dir_calle,dir_numero,dir_piso_depto
+FROM `contactos` where nombre like '%$nombre%' and dir_calle like '%$calle%'";
+
 $hacer = mysqli_query($link,$query);
 $num4 = mysqli_num_rows($hacer);
 
 if (($num4>0)&&($num4<50)) {
-
 $salida.="<table border ='1'>";
-$salida.="<tr><td><center><a href ='importoexcell.php?' class= 'btn btn-success btn-sm'>exportar listado a excell</a></center></td></tr>";
+$salida.="<tr><td><center><a href ='importoexcell3.php?iden1=$nombre&iden2=$calle' class= 'btn btn-success btn-sm'>exportar listado a excell</a></center></td></tr>";
 $salida.="<tr><td>";
 //comienza tabla visible  
 	$salida.="<table border=1 class='tabla_datos'>
@@ -120,14 +124,12 @@ $salida.="</table>";
 
 }
 if($num4>50){
-$salida.="LA BUSQUEDA DEVUELVE MAS DE 50 RESULTADOS, INGRESE MAS PISTAS POR FAVOR";
+$salida ="LA BUSQUEDA DEVUELVE MAS DE 50 RESULTADOS, INGRESE MAS PISTAS POR FAVOR";
 }
 if($num4==0)
 {
-$salida.="NO HAY DATOS :(";
+$salida ="NO HAY DATOS :(";
 }
-
-
 
 echo $salida;
 $close = mysqli_close($link);
