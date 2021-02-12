@@ -1,12 +1,10 @@
 <?php
 $name = $_GET['iden1'];//nombre
-$street = $_GET['iden2'];
+$street = $_GET['iden2'];//direccion
+$city = $_GET['iden3'];//localidad
 
-
-
-
-//header('Content-type: application/vnd.ms-excel;charset=iso-8859-15');
-//header('Content-Disposition: attachment; filename=listado.xls');
+header('Content-type: application/vnd.ms-excel;charset=iso-8859-15');
+header('Content-Disposition: attachment; filename=listado.xls');
 
 include 'conexion2.php';
 ?>
@@ -23,9 +21,8 @@ include 'conexion2.php';
 </tr>
 <?php
 $sqlquery ="select  nombre,c_postal,localidad,pcia,dir_calle,dir_numero,dir_piso_depto
-FROM `contactos` where nombre like '%$name%' and dir_calle like '%$street%'";
-echo $sqlquery;
-/*
+FROM `contactos` where nombre like '%$name%' and dir_calle like '%$street%' and localidad like '%$city%'";
+
 $sqlcall = mysqli_query($link,$sqlquery);
 while ($data = mysqli_fetch_assoc($sqlcall)){
     echo "<tr>";
@@ -38,6 +35,5 @@ while ($data = mysqli_fetch_assoc($sqlcall)){
     echo "<td>'".$data['c_postal']."'</td>";
     echo "<tr>";
 }
+echo "</table>";
 ?>
-</table>
-*/

@@ -4,25 +4,26 @@ include 'conexion2.php';
 
 $nombre = $_POST['var1'];
 $calle = $_POST['var2'];
+$localidad = $_POST['var3'];
 $salida ='';
 
 $query = "select  nombre,c_postal,localidad,pcia,dir_calle,dir_numero,dir_piso_depto
-FROM `contactos` where nombre like '%$nombre%' and dir_calle like '%$calle%'";
+FROM `contactos` where nombre like '%$nombre%' and dir_calle like '%$calle%' and localidad like '%$localidad%'";
 
 $hacer = mysqli_query($link,$query);
 $num4 = mysqli_num_rows($hacer);
 
 if (($num4>0)&&($num4<50)) {
 $salida.="<table border ='1'>";
-$salida.="<tr><td><center><a href ='importoexcell3.php?iden1=$nombre&iden2=$calle' class= 'btn btn-success btn-sm'>exportar listado a excell</a></center></td></tr>";
+$salida.="<tr><td><center><a href ='importoexcell3.php?iden1=$nombre&iden2=$calle&iden3=$localidad' class= 'btn btn-success btn-sm'>exportar listado a excell</a></center></td></tr>";
 $salida.="<tr><td>";
 //comienza tabla visible  
-	$salida.="<table border=1 class='tabla_datos'>
+	$salida.="<table border=1 class='tabla_datos' style='width:800px'>
 <thead>
 <tr id='titulo'>
 	<td>NOMBRE</td>
 	<td>CALLE</td>
-	<td>NUMERO</td>
+	<td>LOCALIDAD</td>
 	<td>FICHAS</td>
 </tr>
 </thead>
@@ -38,12 +39,12 @@ $btnname .=$btnmodal;
 	$salida.="<tr>
 <td>".$fila['nombre']."</td>
 <td>".$fila['dir_calle']."</td>
-<td>".$fila['dir_numero']."</td>
+<td>".$fila['localidad']."</td>
 <td>
 
 <center><!-- Button trigger modal -->
-<button type='button' id='".$btnname."' class='btn btn-primary'>
-  INFO
+<button type='button' id='".$btnname."' class='btn btn-primary btn-sm'>
+  mostrar
 </button></center>
 
 </td>

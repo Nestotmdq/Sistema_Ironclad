@@ -13,21 +13,21 @@
 </head>
 <body>
 
-<section class="principal">
     <center>
 	<h1>BUSQUEDA DE PERSONAS</h1>
     </center>
 	<div class="formulario">
 		<label for="caja_busqueda">Nombre</label>
-		<input type="text" name="caja_busqueda" id="caja_busqueda" placeholder ="todos" class ='cajab'>
-
+		<input type="text" name="caja_busqueda" id="caja_busqueda" placeholder ="nombre" class ='cajab'>
 		<label for="caja_busqueda2">Calle</label>
-		<input type="text" name="caja_busqueda2" id ="caja_busqueda2" placeholder ="todos" class ='cajab'>
+		<input type="text" name="caja_busqueda2" id ="caja_busqueda2" placeholder ="calle" class ='cajab'>
+        <label form="caja_busqueda3">Localidad</label>
+		<input type="text" name="caja_busqueda3" id ="caja_busqueda3"  class = 'cajab'>    
 	</div>
 
 	<div id="datos"></div>
 		
-</section>
+
 
 </body>
 </html>
