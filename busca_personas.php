@@ -6,10 +6,11 @@
 
 <html>
 <head>
+<link rel="shortcut icon" href="logo.png">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src ='js/engine2.js'></script>'
 <link rel="stylesheet" type="text/css" href="css/estilo.css"> 
-<title>Busqueda de personas</title>
+<title>Ironclad Consultas</title>
 </head>
 <body>
 
