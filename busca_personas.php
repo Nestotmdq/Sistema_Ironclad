@@ -13,6 +13,28 @@
 <title>Ironclad Consultas</title>
 </head>
 <body>
+<table  width = 100% height =15%  class='tabla_menu'>
+<tr>
+<td width ="2%"></td>
+<td width ="18%">
+<button type="button" class="btn btn-info" btn-sm>Comparador de calles</button>
+</td>
+<td width ="30%">
+<button type="button" class="btn btn-info" btn-sm>Busca personas con informacion parcial</button>
+</td>
+<td width ="25%">
+<button type="button" class="btn btn-info" btn-sm>Busca personas por calle</button><br>
+</td>
+<td>
+<button type="button" class="btn btn-info" btn-sm>SALIR</button><br>
+</td>
+
+
+<td><img src="logosistema.jpg" width="150px" height ="80px">
+
+</td>
+<tr>
+</table>
 
     <center>
 	<h1>BUSQUEDA DE PERSONAS</h1>

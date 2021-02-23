@@ -1,9 +1,11 @@
 body {
-			font-size: 15px;
-			color: #343d44;
+			
+	        font-size: 15px;
+		    color: #343d44;
 			font-family: "segoe-ui", "open-sans", tahoma, arial;
 			padding: 0;
 			margin: 0;
+		
 		}
 		table {
 			margin: auto;
@@ -82,3 +84,16 @@ body {
 		{
 			background-color: #ffcccc;
 		}
+		.centrar
+		{
+		text-align:center;	
+		}
+		.tabla_menu
+		{
+				
+				font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+			    font-size: 18px;
+				background: #508ab9;
+			  
+		}
+		
