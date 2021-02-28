@@ -18,7 +18,7 @@ $salida.="<table border ='1'class='tabla_fondo'>";
 $salida.="<tr><td><center><a href ='importoexcell3.php?iden1=$nombre&iden2=$calle&iden3=$localidad' class= 'btn btn-success btn-sm'>exportar listado a excell</a></center></td></tr>";
 $salida.="<tr><td>";
 //comienza tabla visible  
-	$salida.="<table border=1 class='tabla_datos' style='width:800px'>
+	$salida.="<table border=1 class='tabla_datos' style='width:900px'>
 <thead>
 <tr id='titulo'>
 	<td>NOMBRE</td>

@@ -1,6 +1,6 @@
 body {
 			
-	        font-size: 15px;
+	        font-size: 25px;
 		    color: #343d44;
 			font-family: "segoe-ui", "open-sans", tahoma, arial;
 			padding: 0;
@@ -12,6 +12,7 @@ body {
 			margin: auto;
 			font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
 			font-size: 12px;
+		 
 		}
 
 		h1 {
@@ -101,6 +102,12 @@ body {
 		{
 			
 				background-color:white;
+				border: black 5px solid;
 			
+		}
+		.stream{
+			font-size: 17px;
+			text-transform: none;
+			text-align: justify
 		}
 		

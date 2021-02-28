@@ -1,24 +1,29 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<?php
+session_start();
+if(isset($_SESSION['status'])){
+?>
 
 <!DOCTYPE html>
 
 <html>
 <head>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="shortcut icon" href="./pics/logo.png">
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script src ='js/engine2.js'></script>'
-<link rel="stylesheet" type="text/css" href="css/estilo.css"> 
-<title>Ironclad Consultas</title>
+<script src ='js/engine2.js'></script>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+ 
+<title>Sistema Ironclad Consultas</title>
 </head>
 <body>
 <?php
 include './php/menubar.php';
+
 ?>
-    <center>
-	<h1>BUSQUEDA DE PERSONAS</h1>
-    </center>
+ 
+	<h1>BUSQUEDA DE PERSONAS CON INFORMACION PARCIAL</h1>
 	<div class="formulario">
 		<label for="caja_busqueda">Nombre</label>
 		<input type="text" name="caja_busqueda" id="caja_busqueda" placeholder ="Ej: Juan Perez" class ='cajab'>
@@ -27,10 +32,39 @@ include './php/menubar.php';
         <label form="caja_busqueda3">Localidad</label>
 		<input type="text" name="caja_busqueda3" id ="caja_busqueda3" placeholder ="Ej: Mar del Plata" class = 'cajab'>    
 	</div>
+	<div id="datos">
+	<br>
 
-	<div id="datos"></div>
+    <table  class ="stream tabla_fondo" width="900px" >
+	<thead>
+	<tr id ='titulo' ><td>INFO</td></tr>
+    </thead>
+     <tr><td>
+  Para buscar los datos de un contribuyente  deberá ingresar la información disponible en las casillas (NOMBRE/CALLE/LOCALIDAD).Cuanta mas informacion ingrese mas preciso será el resultado. Si la busqueda arroja mas de 50 registros deberá ingresar mas datos a fin de reformular la misma.<BR><br>
+ 
+  
+  Los resultados mostrados puede exportarlos a excel presionando el botón
+  
+  <img src="./pics/excel_button.jpg" width ="200px" height ="30px">.<br>
+  Puede tener acceso a las fichas de los contribuyentes a a través de sus botones <img src="./pics/boton_ficha.jpg" width="65px" height ="25px">
+  
+  </td>
+  </tr>
+  </table>
+</td></tr>
+    </table>
+
+
+	</div>
 		
-
-
 </body>
 </html>
+<?php
+
+}
+else{
+header('Location:index.php');}
+?>
+
+
+
