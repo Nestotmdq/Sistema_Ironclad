@@ -14,7 +14,8 @@ if(isset($_SESSION['status'])){
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src ='js/engine2.js'></script>
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
- 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sistema Ironclad Consultas inicia sesion ahora">
 <title>Sistema Ironclad Consultas</title>
 </head>
 <body>
@@ -35,16 +36,16 @@ include './php/menubar.php';
 	<div id="datos">
 	<br>
 
-    <table  class ="stream tabla_fondo" width="900px" >
+    <table  class ="stream tabla_fondo pl-3" width="900px" >
 	<thead>
 	<tr id ='titulo' ><td>INFO</td></tr>
     </thead>
-     <tr><td>
-  Para buscar los datos de un contribuyente  deberá ingresar la información disponible en las casillas (NOMBRE/CALLE/LOCALIDAD).Cuanta mas informacion ingrese mas preciso será el resultado. Si la busqueda arroja mas de 50 registros deberá ingresar mas datos a fin de reformular la misma.<BR><br>
+     <tr><td class="p-3">
  
+  Para buscar los datos de un contribuyente  deberá ingresar la información disponible en las casillas (NOMBRE/CALLE/LOCALIDAD).Cuanta mas información ingrese mas preciso será el resultado. Si la busqueda arroja mas de 50 registros deberá ingresar mas datos a fin de reformular la misma.<BR><br>
   
-  Los resultados mostrados puede exportarlos a excel presionando el botón
   
+  La exportación a excel se hace presionando presionando el botón
   <img src="./pics/excel_button.jpg" width ="200px" height ="30px">.<br>
   Puede tener acceso a las fichas de los contribuyentes a a través de sus botones <img src="./pics/boton_ficha.jpg" width="65px" height ="25px">
   
