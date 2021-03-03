@@ -42,7 +42,7 @@ include './php/menubar.php';
     </thead>
      <tr><td class="p-3">
  
-  Para buscar los datos de un contribuyente  deberá ingresar la información disponible en las casillas (NOMBRE/CALLE/LOCALIDAD).Cuanta mas información ingrese mas preciso será el resultado. Si la busqueda arroja mas de 50 registros deberá ingresar mas datos a fin de reformular la misma.<BR><br>
+  Para buscar los datos de un contribuyente  deberá ingresar la información disponible en las casillas (NOMBRE/CALLE/LOCALIDAD).Cuanta mas información ingrese mas preciso será el resultado. Si la busqueda arroja mas de 50 registros deberá ingresar mas datos a fin de reformular la misma.<br><br>
   
   
   La exportación a excel se hace presionando presionando el botón
@@ -60,6 +60,8 @@ include './php/menubar.php';
 		
 </body>
 </html>
+
+
 <?php
 
 }

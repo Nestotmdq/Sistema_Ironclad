@@ -4,7 +4,7 @@
 <tr>
 <td width ="3%"></td>
 <td width ="17%">
-<a href ="http://www.google.com" class="btn btn-info" btn-sm>Comparador de calles</a>
+<a href ="./StreetRanking.php" class="btn btn-info" btn-sm>Comparador de calles</a>
 </td>
 <td width ="28%">
 <a href ="./busca_personas.php" class="btn btn-info" btn-sm>Busca personas con informacion parcial</a>
