@@ -54,7 +54,7 @@ include './php/menubar.php';
          echo "</td>";
          echo "<td>";
          ?>
-        <input type="button" class ="btn btn-primary btn-sm" href="javascript:;" onclick="realizaProceso($('#max_text_input').val(), $('#min_text_input').val());return false;" value="mostrar" id ="botonmuestra"/> 
+        <input type="button" class ="btn btn-primary btn-sm purple" href="javascript:;" onclick="realizaProceso($('#max_text_input').val(), $('#min_text_input').val());return false;" value="mostrar" id ="botonmuestra"/> 
          <?php
          echo "</td>";
          echo "</tr>";
@@ -65,25 +65,8 @@ include './php/menubar.php';
 
    <span id="resultado">
 <br>
-   <table class ="stream tabla_fondo pl-3"   width='720px'>
-   <thead>
-   <tr id='titulo'>
-<td>INFO</td>
-   </tr>
-   </thead>
-   <td class="p-3">
-   Para consultar este rankig debe primero ingresar las alturas entre las cuales se hará el conteo de los domicilios registrados. Luego debe presionar el botón mostrar.
-   
-   
-   
-   
-   </td>
-   </table>
-   
-
-   
-   
-
+    
+<button type="button" id="btnbuscar" class='btn btn-primary btn-sm'>AYUDA</button>
    
    </span>
 </td>
@@ -94,7 +77,9 @@ include './php/menubar.php';
 </tr>
 </table>
   </div>
+  <div id ="ayuda">
   
+  </div>
 
 
 

@@ -5,8 +5,10 @@ body {
 			font-family: "segoe-ui", "open-sans", tahoma, arial;
 			padding: 0;
 			margin: 0;
-			
-            background-color: #cccccc;
+			background-color: #cccccc;
+			background-image: linear-gradient(to bottom, #f4eeff, #f0e9fd, #ebe5fc, #e7e0fa, #e2dcf9, #dcd7f6, #d6d1f4, #cfccf1, #c5c5ed, #bbbee9, #b1b8e5, #a6b1e1);
+			background-repeat: no-repeat;
+			height: 100vh;
 		}
 		table {
 			margin: auto;
@@ -19,7 +21,7 @@ body {
 			margin: 25px auto 0;
 			text-align: center;
 			text-transform: uppercase;
-			font-size: 20px;
+			font-size: 25px;
 		}
 		div {
 			margin: 25px auto 0;
@@ -111,4 +113,16 @@ body {
 			text-transform: none;
 			text-align: justify
 		}
-		
+		.purple
+		{
+			background: #dc0073;
+			border-color: #dc0073;	
+		}
+		.purple:hover{
+
+			background: #b70462;
+
+		}
+		.h1-encabezado{
+			font-size: 2rem;
+		}

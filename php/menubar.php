@@ -1,6 +1,6 @@
 
 
-<table  width = 100% height =15%  class='tabla_menu'>
+<table  width = 100%  class='tabla_menu'>
 <tr>
 <td width ="3%"></td>
 <td width ="17%">

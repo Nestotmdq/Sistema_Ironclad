@@ -36,26 +36,8 @@ include './php/menubar.php';
 	<div id="datos">
 	<br>
 
-    <table  class ="stream tabla_fondo pl-3" width="900px" >
-	<thead>
-	<tr id ='titulo' ><td>INFO</td></tr>
-    </thead>
-     <tr><td class="p-3">
- 
-  Para buscar los datos de un contribuyente  deberá ingresar la información disponible en las casillas (NOMBRE/CALLE/LOCALIDAD).Cuanta mas información ingrese mas preciso será el resultado. Si la busqueda arroja mas de 50 registros deberá ingresar mas datos a fin de reformular la misma.<br><br>
+	<button type="button" id="btnsearch" class='btn btn-primary btn-sm'>AYUDA</button>
   
-  
-  La exportación a excel se hace presionando presionando el botón
-  <img src="./pics/excel_button.jpg" width ="200px" height ="30px">.<br>
-  Puede tener acceso a las fichas de los contribuyentes a a través de sus botones <img src="./pics/boton_ficha.jpg" width="65px" height ="25px">
-  
-  </td>
-  </tr>
-  </table>
-</td></tr>
-    </table>
-
-
 	</div>
 		
 </body>

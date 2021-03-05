@@ -24,7 +24,7 @@ select counter,dir_calle,localidad from
 where dir_numero BETWEEN '".$altura_uno."'and '".$altura_dos."'
 group by dir_calle ,localidad
 ORDER BY `counter`  DESC limit 50) as cuenta
-";
+";//resolver si da 0 resultados
 
 $sql2 ="select counter from 
 (select count(dir_calle)as counter, dir_calle,dir_numero from contactos
@@ -34,6 +34,9 @@ ORDER BY `counter`  DESC limit 1) as cuenta";
 
 $ancho_cubo = 200;
 $hacer = mysqli_query($link,$sql);
+$datacounter = mysqli_num_rows($hacer);
+
+if($datacounter!=0){
 $hacer2 = mysqli_query($link,$sql2);
 $maxium_counter = mysqli_fetch_assoc($hacer2);
 $rowcount = mysqli_num_rows($hacer2);
@@ -56,7 +59,7 @@ $view .="
 <td>COMPARACION</td>
 <td>REGISTROS</td>
 <td>LOCALIDAD</td>
-<td>FICHAS</td>
+<td>LISTADOS</td>
 </tr>
 </thead>
 ";
@@ -120,6 +123,9 @@ $view .="</td><tr>";
 $view .="</table>";
 
 echo $view;
+}
+else
+{echo "NO EXISTEN DOMICILIOS REGISTRADOS ENTRE LAS ALTURAS INGRESADAS. NO ES POSIBLE ARMAR EL RANKING.";}
 ?>
 
 
