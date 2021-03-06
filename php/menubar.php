@@ -10,7 +10,7 @@
 <a href ="./busca_personas.php" class="btn btn-info" btn-sm>Busca personas con informacion parcial</a>
 </td>
 <td>
-<button type="button" class="btn btn-info" btn-sm>Busca personas por calle</button><br>
+<a href ="./buscaporcalle.php" class="btn btn-info" btn-sm>Busca personas por calle</a>
 </td>
 <td width="10%"></td>
 <td>

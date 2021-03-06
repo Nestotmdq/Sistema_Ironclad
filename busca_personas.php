@@ -21,7 +21,6 @@ if(isset($_SESSION['status'])){
 <body>
 <?php
 include './php/menubar.php';
-
 ?>
  
 	<h1>BUSQUEDA DE PERSONAS CON INFORMACION PARCIAL</h1>
