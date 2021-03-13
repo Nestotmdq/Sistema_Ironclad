@@ -4,7 +4,7 @@
 <tr>
 <td width ="3%"></td>
 <td width ="17%">
-<a href ="./StreetRanking.php" class="btn btn-info" btn-sm>Comparador de calles</a>
+<a href ="./StreetRanking.php" class="btn btn-info" btn-sm target ="self">Comparador de calles</a>
 </td>
 <td width ="28%">
 <a href ="./busca_personas.php" class="btn btn-info" btn-sm>Busca personas con informacion parcial</a>
@@ -17,7 +17,7 @@
 <form action="php/logout.php" method="POST">
 
 <button type="submit" class="btn btn-warning" btn-sm>SALIR</button><br>
-<form>
+</form>
 </td>
 <td><img src="./pics/logosistema2.jpg" width="150px" height ="80px">
 </td>

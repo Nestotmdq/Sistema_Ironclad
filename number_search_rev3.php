@@ -26,9 +26,6 @@ $sql_res = mysqli_num_rows($sql_mostrar);
 if(($sql_res>0)&&($sql_res<100))
 {
 
-//$view4 .= $sql_table;
-////////////// inicio incrustacion
-
 $view4.="<table border ='1' class='tabla_fondo'>";
 $view4.="<tr><td><center><a href ='importoexcell4.php?data1=$calle&data2=$menor&data3=$mayor' class= 'btn btn-success btn-sm'>EXPORTAR LISTADO A EXCEL</a></center></td></tr>";
 $view4.="<tr><td>";
@@ -69,7 +66,7 @@ $view4.="<tr>
 	$(document).ready(function () {
 		$('#".$btnname."').click(function(){
       Swal.fire({
-        html: `<h1>FICHA DE DATOS</h1><br>
+        html: `<h1>FICHA DE DATOS</h1><hr>
         <center>
        <table>
       
@@ -124,6 +121,8 @@ $view4.="<tr>
        </tr>
        </table>
        </center>
+       <br>
+       <input type='button' class='btn btn-primary btn-sm'value='Imprimir' onclick='javascript:window.print()' />
         `,
     });
 		});

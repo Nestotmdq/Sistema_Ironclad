@@ -5,10 +5,11 @@ body {
 			font-family: "segoe-ui", "open-sans", tahoma, arial;
 			padding: 0;
 			margin: 0;
-			background-color: #cccccc;
+			background-color: #c3c3ec;
 			background-image: linear-gradient(to bottom, #f4eeff, #f0e9fd, #ebe5fc, #e7e0fa, #e2dcf9, #dcd7f6, #d6d1f4, #cfccf1, #c5c5ed, #bbbee9, #b1b8e5, #a6b1e1);
 			background-repeat: no-repeat;
-			height: 100vh;
+			min-height: 100vh;
+			height: 100%;
 		}
 		table {
 			margin: auto;

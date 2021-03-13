@@ -54,7 +54,7 @@ $btnname .=$btnmodal;
 	$(document).ready(function () {
 		$('#".$btnname."').click(function(){
       Swal.fire({
-        html: `<h1>FICHA DE DATOS</h1><br>
+        html: `<h1>FICHA DE DATOS</h1><hr>
         <center>
        <table>
       
@@ -109,6 +109,8 @@ $btnname .=$btnmodal;
        </tr>
        </table>
        </center>
+       <br>
+       <input type='button' class='btn btn-primary btn-sm'value='Imprimir' onclick='javascript:window.print()' />
         `,
     });
 		});

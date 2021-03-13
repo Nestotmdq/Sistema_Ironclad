@@ -1,8 +1,6 @@
 <script src="js/sweetalert2@10.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
 <?php
 session_start();
 include 'conexion2.php';
@@ -69,7 +67,7 @@ $view2 .="
 <script >
 	$(document).ready(function () {
 		$('#".$btn_alert_name."').click(function(){
-      Swal.fire({html: `<h1>FICHA DE DATOS</h1><br>
+      Swal.fire({html: `<h1>FICHA DE DATOS</h1><hr>
         <center>
 <table>
 <tr>
@@ -109,6 +107,8 @@ $view2 .="
 </tr>
 </table></div>
 </center>
+<br>
+       <input type='button' class='btn btn-primary btn-sm'value='Imprimir' onclick='javascript:window.print()' />
         `, });    
 		});
 	});

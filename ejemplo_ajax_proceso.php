@@ -119,7 +119,7 @@ $position_counter ++;
 $view .="</table></center>";
 //fin tabla visible
 
-$view .="</td><tr>";
+$view .="</td></tr>";
 $view .="</table>";
 
 echo $view;

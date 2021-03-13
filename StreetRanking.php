@@ -44,12 +44,12 @@ include './php/menubar.php';
          echo "<tr>";
          echo "<td>";
          echo '<label for="caja_busqueda"  class ="texto">Altura A</label>';
-         echo "<input type='range' name='max_range_input' step='100' min='0' max='".$altura_maxima."' onchange='updTextmax(this.value);'>
+         echo "<input type='range' value='0' name='max_range_input' step='100' min='0' max='".$altura_maxima."' onchange='updTextmax(this.value);'>
          ";
-         echo "<input type='text' id='max_text_input' value='".$altura_maxima."'>";
+         echo "<input type='text' id='max_text_input' value='0'>";
          echo "<br>";
          echo "<label for='caja_busqueda2' class ='texto'>Altura B</label>";
-         echo "<input type='range' name='min_range_input' step='100' min='0' max='".$altura_maxima."' onchange='updTextmin(this.value);'>";
+         echo "<input type='range' value='".$altura_maxima."' name='min_range_input'  min='0' max='".$altura_maxima."' onchange='updTextmin(this.value);'>";
          echo "<input type='text' id='min_text_input' value='".$altura_maxima."'>";
          echo "</td>";
          echo "<td>";
@@ -69,8 +69,9 @@ include './php/menubar.php';
 <button type="button" id="btnbuscar" class='btn btn-primary btn-sm'>AYUDA</button>
    
    </span>
-</td>
-<td><td valign ="top" td width ="40%">
+<!-- </td> -->
+<td>
+<td valign ="top" td width ="40%">
 
 <span id="resultado2"></span>
 </td>
