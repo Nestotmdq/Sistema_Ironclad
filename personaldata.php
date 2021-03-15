@@ -14,7 +14,7 @@ $sqlquery = "select * from contactos where localidad like '".$valor1."' and dir_
 $view2 ='';
 $view2 .="
 <link rel='stylesheet' type='text/css' href='css/estilo.css'> 
-<section class='principal'>
+<header class='principal'>
 <center>
 <h1>LISTADO DE CONTRIBUYENTES CALLE 
 ";
@@ -25,11 +25,7 @@ $view2 .= " ";
 $view2 .= "y";
 $view2 .= " ";
 $view2 .= $valor4;
-$view2 .= "<h1></center>";
-$view2 .="<br><br>";
-$view2 .= "<center>";
-$view2 .= "</center>";
-$view2 .="<br>";
+$view2 .= "</h1></center></header>";
 $view2 .="<table class='tabla_fondo'>";
 $view2 .= "<tr><td><center><a href ='importoexcell.php?v1=".$valor1."&v2=".$valor2."&v3=".$valor3."&v4=".$valor4."' class= 'btn btn-success btn-sm'>EXPORTAR LISTADO A EXCEL</a></center></td></tr>";
 $view2 .= "<tr><td>";

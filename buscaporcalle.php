@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 if(isset($_SESSION['status'])){
@@ -6,7 +5,7 @@ if(isset($_SESSION['status'])){
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
 <head>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <script src="js/jquery.min.js"></script>

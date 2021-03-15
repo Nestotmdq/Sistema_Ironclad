@@ -6,7 +6,7 @@ if(isset($_SESSION['status'])){
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
 <head>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
